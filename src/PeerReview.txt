@@ -1,0 +1,44 @@
+In reviewing the provided code,
+I found that the interfaces demonstrated a small degree of flexibility,
+particularly in relation to the board structures. However, the view and
+controller interfaces were empty, which posed challenges during implementation.
+The views exhibited limited capability, notably in the incorrect placement of tiles,
+and the accompanying interface lacked sufficient documentation, making it difficult to
+comprehend and utilize effectively. Reusing the code was also hindered by the absence
+of clear extension points, necessitating additional effort to repurpose the code without
+extending classes.
+
+The code documentation left much to be desired, with numerous empty interfaces and unclear
+methods, further complicating the implementation process. Integrating views into the main
+method proved unclear, lacking documentation on how to initiate the game. Even after
+invoking the setHotKeys method, no visible changes occurred. A notable issue arose when
+working with the readonlyreversimodel interface, where the getBoard and defaultBoard methods
+returned the model, impeding implementation. I requested a modification to the interface,
+suggesting a switch to returning hashmaps instead, which was subsequently implemented,
+resolving the issue. Overall, improving documentation clarity, refining interfaces,
+and addressing limitations in code reuse would greatly enhance the usability and
+maintainability of the provided code. After communicating with the providers
+about their code, I felt a little disappointed with their response
+as I still didn't quite understand how to start their game, as their answers were
+a little board and unclear. I had hoped for clearer documentation, and
+possibly better answers from my providers.
+
+Upon trying to implement their game using their views and my adapters,
+I was running into many issues, and even after communicating with the providers I was still
+a little confused. I would also like to say that I wrote a second main method for just
+testing their strategies.
+The first main method was just for implementing their game, however, as their view
+wasn't initiating properly, I attempted to implement their strategies into my
+model and game instead.
+
+Overall, as I do think that their model probably coupled really well with their views,
+it was extremely difficult to use their views with my adapters, as
+their documentation wasn't great, responses were confusing, and
+interfaces were empty or unclear. With more communication, and a
+clearer understanding of their main method it probably would have
+been easier to implement their views.
+
+
+
+
+
